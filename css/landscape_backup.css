@@ -1,0 +1,322 @@
+@media only screen 
+and (min-width : 320px)
+and (max-width: 1024px)
+and (orientation : landscape) {
+
+	.interest_div{
+		height: 300vh;
+	}
+	
+	.interest_main .text{
+		font-size: 4vw;
+	}
+
+	#lebron_poster{
+		width: 60vw;
+		position: absolute;
+		bottom: -20vw;
+		left:50vw;
+	}
+	
+	#kobe_painting{
+		position: absolute;
+		width:41vw;
+		top: 1vh;
+		left: 2vw;
+	}
+	
+	.basketball_text{
+		height:80vh;
+		width: 77vw;
+		top: 90vh;
+		left: 5vw;
+	}
+	
+	#basketball_icon{
+		position: absolute;
+		width:14vw;
+		height: 14vw;
+		left:5vw;
+		animation: bounce 0.78s  ease-out infinite;		
+	}
+		
+	/* guitar */
+	.guitar{
+		position: relative;;
+		width: 100%;
+		height: 300vh;
+		background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/interest/guitar/background_phone.png");
+		background-size: cover;
+		opacity: 0.75;
+		overflow: hidden;
+	
+	}
+	
+	#guitar_img{
+		position: absolute;
+		width: 100vw;
+		top:-80vh;
+		left:-20vw;
+	}
+	.guitar_text{
+		position:absolute;
+		width: 65vw;
+		height: 80vh;
+		top: 100vh;
+		left: 30vw;
+		background-color: rgb(27, 27, 27);
+		opacity: 0.94;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5vw;
+		box-shadow: 3vw 4vw #5c3452;
+	
+	}
+	
+	.guitar_text p{
+		margin:4vw;
+	}
+	
+	#notes1{
+		position: absolute;
+		z-index: 100;
+		width:9.5vw;
+		top: 200vh;
+		left: 30vw;
+		animation:  notes_shift 3.3s linear infinite;
+	
+	}
+	#notes2{
+		position: absolute;
+		z-index: 100;
+		width:13vw;
+		top: 200vh;
+		left: 41vw;
+		animation:  notes_shift 2.9s linear infinite;
+	}
+	#notes3{
+		position: absolute;
+		z-index: 100;
+		width:11vw;
+		top: 210vh;
+		left: 56vw;
+		animation:  notes_shift 3.5s linear infinite;
+	}
+	
+	@keyframes notes_shift {
+		0% { transform:  scale(1); }
+		10% { transform: translate(2vw, -2vw) rotate(10deg) scale(1.1); }
+		20% { transform: translate(6vw, -4.8vw) rotate(0deg) scale(1.18); }
+		30% { transform: translate(9.5vw, -7.8vw) rotate(-11deg) scale(1.26); }
+		40% { transform: translate(13vw, -10.4vw) rotate(1deg) scale(1.34); opacity:0.8}
+		50% { transform: translate(16.8vw, -12.7vw) rotate(10deg) scale(1.42); opacity: 0.6;}
+		60% { transform: translate(20vw, -16vw) rotate(2deg) scale(1.5); opacity: 0.5;}
+		70% { transform: translate(23.7vw, -18.8vw) rotate(-8deg) scale(1.54); opacity: 0.4;}
+		80% { transform: translate(28vw, -21vw) rotate(0deg) scale(1.58); opacity: 0.3;}
+		100% { transform: translate(31.7vw, -23.5vw) rotate(10deg) scale(1.58); opacity: 0.0;}
+	  }
+	
+	
+	
+	
+	/* mario */
+	.mario{
+		position: relative;;
+		width: 100%;
+		height: 300vh;
+		background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/interest/mario kart/mario_background.jpg");
+		background-size: cover;
+		opacity: 0.75;
+		overflow: hidden;
+	
+	}
+	
+	#mario_kart{
+		position: absolute;
+		bottom:0vh;
+		left:30vw;
+		z-index: 2;
+	}
+	
+	#pipe{
+		width: 45vw;
+		position: absolute;
+		bottom:-10vh;
+		left:-8vw;
+	}
+	
+	#brick{
+		width: 45vw;
+		position: absolute;
+		bottom: 40vh;
+		left:0vw;
+	}
+	
+	#star{
+		position: absolute;
+		width:14vw;
+		bottom: 110vh;
+		left:16vw;
+		z-index: 2;
+		display:none;
+		
+	}
+	
+	.star_activate{
+		animation: shine 2.3s linear;
+	}
+	
+	#mario_logo{
+		position: absolute;
+		width:14vw;
+		top: 6vw;
+		right:6vw;
+	}
+	
+	.mario_text{
+		position:absolute;
+		width: 65vw;
+		height: 80vh;
+		top: 80vh;
+		left: 7vw;
+		background-color: rgb(27, 27, 27);
+		opacity: 0.85;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5vw;
+		box-shadow: 3vw 4vw #3229af;
+	
+	}
+	.mario_text p{
+		margin: 4vw;
+	}
+	
+	
+	/* youtube */
+	.youtube{
+		position: relative;;
+		width: 100%;
+		height: 300vh;
+		background-image: linear-gradient(to top,rgba(0,0,0,0.75),rgba(0,0,0,0.25),rgba(0,0,0,0.0)),url("../imgs/interest/youtube/background3.jpg");
+		background-size: cover;
+		opacity: 0.65;
+		overflow: hidden;
+	
+	}
+	
+	#window{
+		position: absolute;
+		width: 100vw;
+		bottom: 70vh;
+		left: 0;
+		
+	}
+	
+	#youtube_logo{
+		width: 45vw;
+		position: absolute;
+		top: 30vh;
+		left:9vw;
+		z-index: 2;
+	
+	}
+	
+	#youtube_logo:hover, #youtube_logo:active{
+		animation: shake 0.8s;
+	}
+	
+	
+	.youtube_text{
+		position:absolute;
+		width: 75vw;
+		height: 80vh;
+		bottom:110vh;
+		left: 13vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5vw;
+	
+	}
+	
+	/* travel */
+	.travel{
+		position: relative;;
+		width: 100%;
+		height: 300vh;
+		background-image: linear-gradient(to top,rgba(0,0,0,0.95),rgba(0,0,0,0.55),rgba(0,0,0,0.0)),url("../imgs/interest/travel/collage.jpeg");
+		background-size: contain;
+		opacity: 0.75;
+		overflow: hidden;
+	
+	}
+	
+	#attractions{
+		position: absolute;
+		width: 73vw;
+		bottom: 40vh;
+		left: 0;
+		animation: drift 3s linear infinite;
+		
+	}
+	
+	#shadow{
+		width: 35vw;
+		position: absolute;
+		bottom: 2vh;
+		left:14vw;
+		animation: shadow_effect 3s linear infinite;
+	}
+	
+	#passport{
+		width: 50vw;
+		position: absolute;
+		bottom: 90vh;
+		right:-7vw;
+		z-index:2;
+		
+	}
+	
+	.travel_text{
+		position:absolute;
+		width: 65vw;
+		height: 80vh;
+		top: 70vh;
+		left: 15vw;
+		background-color: rgb(27, 27, 27);
+		opacity: 0.85;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5vw;
+		box-shadow: 3vw 4vw #84fff4;
+	
+	}
+	.travel_text p{
+		margin: 4vw;
+	}
+	
+	#visited_num{
+		color: #84fff4;
+		font-weight: bold	;
+	
+	}
+	
+	
+	@keyframes shine {
+		0% { bottom: 100vh; transform: scale(1) ; opacity:0.0}
+		10% {bottom: 105vh;transform: scale(1) ; opacity: 0.5}
+		20%{bottom: 110vh; transform:  scale(1) ; opacity: 1}
+		30% { transform: scale(1.27) ;}
+		40% {transform: scale(1) ;}
+		50%{transform:  scale(1.18) ;}
+		60%{transform:  scale(1) ;}
+		70%{transform:  scale(1.12) ;}
+		80%{transform:  scale(1) ;}
+		100%{transform: scale(1) ;}
+	  }
+	
+
+} 

@@ -1,0 +1,1416 @@
+
+/* phone view */
+/* ***************************************************************************************************************************** */
+
+body{
+    background-color:#222222;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo {
+	height:5vh;
+}
+
+header{
+	height:8.5vh;
+	background-color:#1b1b1b;
+	font-family: 'Sora', sans-serif;
+	font-size: 100%;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top:0;
+	left:0;
+	z-index: 10;
+	
+}
+
+.skip a{
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 20;
+	position: absolute;
+	top: -100px;
+	color:rgb(54, 104, 211);
+  }
+  
+.skip a:focus{
+	top: 0px;
+}
+
+header li{
+	margin: 2vw;
+}
+
+header a{
+    text-decoration: none;
+	color:white
+}
+
+header a:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-underline-offset: 0.2em;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+}
+
+#current{
+	color: white;
+	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	padding: 2px;
+	border-image: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%) 1;
+
+}
+
+main{
+	width: 90%;
+	margin:0 auto;
+	margin-bottom: 2vh;
+}
+
+#ftc_photo{
+	margin-top: 2vh;
+	border-radius: 8%;
+}
+
+.fancy{
+	margin-top:4vh;
+}
+.line {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 8vw;
+	line-height: 1.25;
+	margin-top: 1.8vh;
+	
+}
+.color-primary{
+	color:white;
+}
+.color-secondary{
+	color:rgb(161, 161, 161);
+}
+.word {
+	margin-right: 2vw;
+	
+}
+.color{
+	display: inline-block;
+}
+.technology, .design{
+	display: inline;
+	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.short_intro{
+	margin-top:5vh;
+	font-size: 5.1vw;
+	line-height: 1.8;
+	margin-bottom:7vh;
+}
+
+footer{
+	background-color:#1b1b1b;
+	height:8.5vh;
+	text-align: center;
+	font-size: 120%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* projects preview */
+
+.proj{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4,88vw);
+	grid-gap: 2vh;
+	
+}
+
+.proj div{
+	height: 100%;
+	text-decoration: none;
+}
+
+.proj h1{
+	display:inline-block;
+	width:91%;
+	color: white;
+	text-align: left;
+	margin-left: 5vw;
+	margin-right:8vw;
+	margin-bottom: 5vw;
+	font-size: 5vw;
+	line-height: 1.3;
+	font-family: 'Sora', sans-serif;
+
+}
+
+.proj a, .proj a:focus{
+	text-decoration: none;
+}
+
+.proj span{
+	color:#F57684;
+	font-weight: bold;
+}
+
+.proj_preview{
+	border-radius: 7%;
+	background-size: cover;
+	display:  flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+#homesOffCampus{
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.35),rgba(0,0,0,0)),url("../imgs/proj/homesOffCampus/logo.png");
+}
+
+#confucious{
+	background-color: #3c3c3c;
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.35),rgba(0,0,0,0)),url("../imgs/proj/confucious/concept_logo.PNG");
+}
+
+#collect{
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.35),rgba(0,0,0,0)),url("../imgs/proj/collect/logo.png");
+}
+
+#connectr{
+	background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.35),rgba(0,0,0,0)),url("../imgs/proj/connectr/logo.png");
+}
+
+.back{
+	display: inline-block;
+	font-family: 'Sora', sans-serif;
+	font-size: 100%;
+	margin-left: 6vw;
+	margin-bottom: 3vh;
+	color: #F57684;
+	text-decoration: none;
+}
+
+.project_detail{
+	font-size: 6vw;
+	background-color: white;
+	width: 100%;
+	margin-bottom: 0;
+	color:black;
+	padding: 3vw;
+}
+
+.project_detail .regular_text{
+	font-size: 4vw;
+	margin-left: 3vw;
+	margin-bottom: 3vh;
+}
+
+.what{
+	color:#4F7CAC;
+	font-size: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3vh;
+}
+
+.project_detail iframe{
+	width: 90%;
+	height: 25vh;
+	display: block;
+	margin:0 auto;
+}
+
+/* homesOffCampus */
+
+/* confucious */
+
+/* connectr */
+
+/* collect */
+
+
+
+/* interest */
+.interest_main{
+	width:100%;
+}
+
+.interest_div{
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	opacity: 0.75;
+	overflow: hidden;
+	margin-bottom: 2vh;
+}
+
+.interest_main .text{
+	position: absolute;
+	background-color: rgb(27, 27, 27);
+	opacity: 0.85;
+	font-size: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.interest_main .text p{
+	margin: 4vw;
+}
+
+/* basketball */
+.basketball{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),url("../imgs/interest/basketball/background3.png");
+}
+
+#lebron_poster{
+	position: absolute;
+	width: 70vw;
+	bottom:-14vw;
+	right:-13vw;
+	z-index:2;
+}
+
+#kobe_painting{
+	position: absolute;
+	width:41vw;
+	top: 1.0vh;
+	left: 2vw;
+}
+
+#kobe_painting:active, #kobe_painting:hover{
+	animation: shake 0.6s;
+}
+
+.basketball_text{
+	height:27vh;
+	width: 77vw;
+	top: 24vh;
+	left: 5vw;
+	box-shadow: 4vw 3vw rgb(128, 0, 0);
+}
+
+#basketball_icon{
+	position: absolute;
+	width:14vw;
+	height: 14vw;
+	left:5vw;
+	animation: bounce 0.78s  ease-out infinite;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@keyframes bounce {
+	0% {
+	  bottom: 12vh;
+	}
+	50% {
+	  bottom: -3vw;
+	  width: 15.9vw;
+	  height: 12.4vw;
+	}
+	100%{
+		bottom: 12vh;
+		width:14vw;
+		height:14vw;
+	}
+  }
+
+  /* guitar */
+.guitar{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),url("../imgs/interest/guitar/background_phone.png")
+}
+
+#guitar_img{
+	position: absolute;
+	width: 100vw;
+	top:-18vh;
+	left:-20vw;
+}
+
+.guitar_text{
+	width: 65vw;
+	height: 32vh;
+	top: 20vh;
+	left: 30vw;
+	box-shadow: 3vw 4vw #5c3452;
+
+}
+
+#notes1{
+	position: absolute;
+	z-index: 100;
+	width:9.5vw;
+	top: 53vh;
+	left: 30vw;
+	animation:  notes_shift 3.4s linear infinite;
+}
+#notes2{
+	position: absolute;
+	z-index: 100;
+	width:13vw;
+	top: 53vh;
+	left: 41vw;
+	animation:  notes_shift 2.9s linear infinite;
+}
+#notes3{
+	position: absolute;
+	z-index: 100;
+	width:11vw;
+	top: 56vh;
+	left: 56vw;
+	animation:  notes_shift 3.7s linear infinite;
+}
+
+@keyframes notes_shift {
+	0% { transform:  scale(1); }
+	10% { transform: translate(2vw, -2vw) rotate(10deg) scale(1.1); }
+	20% { transform: translate(6vw, -4.8vw) rotate(0deg) scale(1.18); }
+	30% { transform: translate(9.5vw, -7.8vw) rotate(-11deg) scale(1.26); }
+	40% { transform: translate(13vw, -10.4vw) rotate(1deg) scale(1.34); opacity:0.8}
+	50% { transform: translate(16.8vw, -12.7vw) rotate(10deg) scale(1.42); opacity: 0.6;}
+	60% { transform: translate(20vw, -16vw) rotate(2deg) scale(1.5); opacity: 0.5;}
+	70% { transform: translate(23.7vw, -18.8vw) rotate(-8deg) scale(1.54); opacity: 0.4;}
+	80% { transform: translate(28vw, -21vw) rotate(0deg) scale(1.58); opacity: 0.3;}
+	100% { transform: translate(31.7vw, -23.5vw) rotate(10deg) scale(1.58); opacity: 0.0;}
+  }
+
+/* mario */
+.mario{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),url("../imgs/interest/mario kart/mario_background.jpg");
+}
+
+#mario_kart{
+	position: absolute;
+	bottom:0vh;
+	left:30vw;
+}
+
+#pipe{
+	width: 45vw;
+	position: absolute;
+	bottom:-3vh;
+	left:-8vw;
+}
+
+#brick{
+	width: 45vw;
+	position: absolute;
+	bottom: 7vh;
+	left:0vw;
+}
+
+#star{
+	position: absolute;
+	width:14vw;
+	bottom: 24vh;
+	left:16vw;
+	z-index: 2;
+	display:none;
+}
+
+.star_activate{
+	animation: shine 2.3s linear;
+}
+
+@keyframes shine {
+	0% { bottom: 22vh; transform: scale(1) ; opacity:0.0}
+	10% {bottom: 23vh;transform: scale(1) ; opacity: 0.5}
+	20%{bottom: 24vh; transform:  scale(1) ; opacity: 1}
+	30% {transform: scale(1.27) ;}
+	40% {transform: scale(1) ;}
+	50%{transform:  scale(1.18) ;}
+	60%{transform:  scale(1) ;}
+	70%{transform:  scale(1.12) ;}
+	80%{transform:  scale(1) ;}
+	100%{transform: scale(1) ;}
+}
+
+#mario_logo{
+	position: absolute;
+	width:14vw;
+	top: 6vw;
+	right:6vw;
+}
+
+.mario_text{
+	width: 65vw;
+	height: 30vh;
+	top: 13vh;
+	left: 7vw;
+	box-shadow: 3vw 4vw #3229af;
+}
+
+/* youtube */
+.youtube{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0.0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0.0)),url("../imgs/interest/youtube/background3.jpg");
+}
+
+#window{
+	position: absolute;
+	width: 100vw;
+	bottom: 20vh;
+	left: 0;
+}
+
+#youtube_logo{
+	width: 45vw;
+	position: absolute;
+	top: 1vh;
+	left:3vw;
+	z-index: 2;
+}
+
+#youtube_logo:hover, #youtube_logo:active{
+	animation: shake 0.8s;
+}
+
+.youtube_text{
+	width: 80vw;
+	height: 33vh;
+	bottom:24vh;
+	left: 13vw;
+}
+
+.interest_main  .youtube_text{
+	background-color: transparent;
+}
+
+/* travel */
+.travel{
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0.0)),linear-gradient(to top,rgba(0,0,0,0.95),rgba(0,0,0,0.55),rgba(0,0,0,0.0)),url("../imgs/interest/travel/collage.jpeg");
+	background-size: contain;
+}
+
+#attractions{
+	position: absolute;
+	width: 73vw;
+	bottom: 8vh;
+	left: 0;
+	animation: drift 3.8s linear infinite;
+}
+
+@keyframes drift {
+	0% { transform: translate(0px, -20px);}
+	50% { transform: translate(0px, 0px);}
+	100% { transform: translate(0px, -20px);}
+}
+
+#shadow{
+	width: 35vw;
+	position: absolute;
+	bottom: 2vh;
+	left:14vw;
+	animation: shadow_effect 3.8s linear infinite;
+}
+
+@keyframes shadow_effect {
+	0% { transform: scale(1);}
+	50% { transform: scale(1.14,0.6);}
+	100% { transform: scale(1);}
+}
+
+#passport{
+	width: 50vw;
+	position: absolute;
+	bottom: 17vh;
+	right:-7vw;
+	z-index:2;	
+}
+
+.travel_text{
+	width: 65vw;
+	height: 33vh;
+	top: 12vh;
+	left: 15vw;
+	box-shadow: 3vw 4vw #84fff4;
+}
+
+#visited_num{
+	color: #84fff4;
+	font-weight: bold;
+}
+
+/* contact me */
+legend{ 
+	font-size: 125%;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 2vh;
+}
+  
+label{
+	display: inline-block;
+	margin-right:10px;
+	font-size: 100%;
+	width:60%;
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 2vw 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+	height: 35vh;
+	padding: 12px 20px;
+	margin: 2vw 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+  
+input[type=submit] {
+	background-color: #F57684;
+	color: white;
+	padding: 14px 20px;
+	margin: 10px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 130%;
+}
+  
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+/* travel */
+.parallax{
+	background-image: url("../imgs/interest/travel/collage.jpeg");
+	min-height: 70vh; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.travel_photo{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	overflow: hidden;
+}
+.travel_photo img:hover{
+	opacity: 0.5;
+}
+
+
+
+/* phone and tablet landscape view */
+/* ***************************************************************************************************************************** */
+
+
+/* tablet portrait view */
+/* ***************************************************************************************************************************** */
+@media only screen 
+and (min-width : 481px)
+and (max-width: 999px)
+and (orientation: portrait)
+ {
+
+	#logo {
+		height:8vh;
+		margin-top: 1vh;
+	}
+	
+	header{
+		height:14vh;
+		font-size: 140%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		position: sticky;
+		top:0;
+		left:0;
+		margin-bottom: 2vh;
+		z-index: 10;
+	}
+	
+	header li{
+		margin: 0 4vw 1vw 4vw;
+	}
+		
+	main{
+		width: 85%;
+	}
+	
+	#ftc_photo{
+		display: block;
+		border-radius: 8%;
+		width:65vw;
+		margin: 3vw auto;
+	}
+	
+	.line {
+		justify-content: center;
+		font-size: 7vw;
+		margin-top: 1.8vh;
+	}
+	
+	.short_intro{
+		margin-top: 5vh;
+		font-size: 4.5vw;
+		line-height: 1.8;
+		margin-bottom:7vh;
+		text-align: center;
+	}
+	
+	/* projects preview page */
+	.proj{
+		display: grid;
+		width:100%;
+		grid-column-gap: 3vh;
+		grid-row-gap: 3vh;
+		grid-template-columns: 45vw 45vw;
+		grid-template-rows: repeat(2,45vw);
+		justify-content: space-around;	
+	}
+
+	.proj h1{
+		font-size: 3vw;
+		margin-left: 3vw;
+	}
+	
+	/* interest */
+	.interest_div{
+		height: 130vh;
+	}
+
+	#lebron_poster{
+		width: 70vw;
+		position: absolute;
+		bottom: -10vw;
+		right:-13vw;
+		z-index:2;
+	}
+	
+	.basketball_text{
+		height:50vh;
+		width: 77vw;
+		top: 40vh;
+		left: 5vw;
+	}
+
+	#basketball_icon{
+		animation: bounce 0.78s  ease-out infinite;	
+	}
+	
+	@keyframes bounce {
+		0% {
+		  bottom: 20vh;
+		}
+		50% {
+		  bottom: -3vw;
+		  width: 15.9vw;
+		  height: 12.4vw;
+		}
+		100%{
+			bottom: 20vh;
+			width:14vw;
+			height:14vw;
+		}
+	  }
+	
+	/* guitar */
+	
+	#guitar_img{
+		width: 100vw;
+		top:-17vh;
+		left:-20vw;
+	}
+
+	.guitar_text{
+		width: 65vw;
+		height: 50vh;
+		top: 40vh;
+		left: 30vw;
+	}
+	
+	.guitar_text p{
+		margin:4vw;
+	}
+	
+	#notes1{
+		width:9.5vw;
+		top: 90vh;
+		left: 30vw;
+		animation:  notes_shift 3.4s linear infinite;
+	}
+
+	#notes2{
+		width:13vw;
+		top: 90vh;
+		left: 41vw;
+		animation:  notes_shift 2.9s linear infinite;
+	}
+
+	#notes3{
+		width:11vw;
+		top: 95vh;
+		left: 56vw;
+		animation:  notes_shift 3.7s linear infinite;
+	}	
+	
+	/* mario */	
+	#mario_kart{
+		bottom:0vh;
+		left:30vw;
+		z-index: 2;
+	}
+	
+	#pipe{
+		width: 45vw;
+		bottom:0vh;
+		left:-8vw;
+	}
+	
+	#brick{
+		width: 45vw;
+		bottom: 20vh;
+		left:0vw;
+	}
+	
+	#star{
+		width:14vw;
+		bottom: 44vh;
+		left:16vw;
+		z-index: 2;	
+	}
+	
+	.star_activate{
+		animation: shine 2.3s linear;
+	}
+	
+	@keyframes shine {
+		0% { bottom: 38vh; transform: scale(1) ; opacity:0.0}
+		10% {bottom: 41vh;transform: scale(1) ; opacity: 0.5}
+		20%{bottom: 44vh; transform:  scale(1) ; opacity: 1}
+		30% { transform: scale(1.27) ;}
+		40% {transform: scale(1) ;}
+		50%{transform:  scale(1.18) ;}
+		60%{transform:  scale(1) ;}
+		70%{transform:  scale(1.12) ;}
+		80%{transform:  scale(1) ;}
+		100%{transform: scale(1) ;}
+	}
+
+	#mario_logo{
+		width:14vw;
+		top: 6vw;
+		right:6vw;
+	}
+	
+	.mario_text{
+		width: 65vw;
+		height: 50vh;
+		top: 20vh;
+		left: 7vw;	
+	}
+
+	/* youtube */	
+	#window{
+		bottom: 35vh;
+	}
+	
+	#youtube_logo{
+		top: 1vh;
+		left:3vw;
+	}
+		
+	.youtube_text{
+		width: 75vw;
+		height: 80vh;
+		bottom:27vh;
+		left: 13vw;
+	}
+	
+	/* travel */
+	
+	#attractions{
+		bottom: 15vh;
+		left: 0;		
+	}
+	
+	#shadow{
+		bottom: 2vh;
+		left:14vw;
+	}
+	
+	#passport{
+		bottom: 40vh;
+		right:-7vw;		
+	}
+	
+	.travel_text{
+		width: 65vw;
+		height: 50vh;
+		top: 25vh;
+		left: 15vw;
+	}
+
+	/* form */
+	form{
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	legend{
+		font-size: 180%;
+	}
+
+	label{
+		font-size: 150%;
+	}
+
+	input[type="submit"]{
+		font-size: 150%;
+	}
+
+	.parallax{
+		background-image: url("../imgs/interest/travel/collage.jpeg");
+		min-height: 70vh; 
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.travel_photo{
+		display: grid;
+		grid-template-columns: 1fr 1.5fr;
+		grid-template-rows: auto;
+		grid-gap:3vw;
+		overflow: hidden;
+		align-items: center ;
+	}
+	.travel_photo img:hover{
+		opacity: 0.5;
+	}
+}
+
+
+
+/* desktop view */
+/* ***************************************************************************************************************************** */
+@media only screen and (min-width: 1024px){
+	/* main page fancy letters */
+	.about_main{
+		width: 80%;
+		background-image: linear-gradient(to top,rgba(34,34,34,1)  ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		linear-gradient(to bottom,rgba(34,34,34,1) ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		linear-gradient(to left,rgba(34,34,34,1) ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		linear-gradient(to right,rgba(34,34,34,1) ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		url(../imgs/personal/dark_space_night_sky_6816795.webp);	
+		background-size: cover;
+	}
+
+	.color{
+		display:inline-block;
+		transition: color 3s ease-out 1.2s;
+	}
+	
+	.color1:hover{
+		color:#ff7b8a;
+		transition: color 0.1s ease-out 0s;	
+	}
+	.color2:hover{
+		color:#ff81ec;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color3:hover{
+		color:#9e6dff;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color4:hover{
+		color:#5d98ff;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color5:hover{
+		color:#66e3ff;
+		transition: color 0.1s ease-out 0s;
+	}
+
+
+	#logo {
+		height:6vh;
+		margin-top: 1vh;
+	}
+	
+	header{
+		height:9vh;
+		font-size: 120%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		padding:2vw;
+	}
+
+	header li{
+		margin: 1vw 3vw 1vw 3vw;
+	}
+
+	main{
+		width: 85%;
+		margin:0 auto;
+	}
+
+	#desktop_intro{
+		display: grid;
+		grid-template-columns: 1.3fr 1fr;
+		grid-column-gap: 0;
+		align-items: center;
+		margin-top: 5vh;
+	}
+
+	.ftc_photo_div{
+		grid-column: 2/ span 1;
+		grid-row: 1/span 1;
+		justify-self: center;
+	}
+
+	.fancy{
+		grid-column: 1/ span 1;
+		grid-row: 1/span 1;
+		justify-self: center;
+		align-self: center;
+		width:80%;
+		margin-top:0;
+	}
+
+	#ftc_photo{
+		display: block;
+		border-radius: 8%;
+		width:98%;
+		margin: 3vw auto;
+	}
+	
+	.line {
+		font-size: 2.7vw;
+		line-height: 1.25;
+		margin-top: 2vw;	
+	}
+	
+	.short_intro{
+		width: 60%;
+		margin:0 auto;
+		margin-top:8vh;
+		font-size: 1.5vw;
+		line-height: 1.8;
+		margin-bottom:8vh;
+		text-align: left;
+
+	}
+	.short_intro .belief{
+		text-shadow:
+		0 0 2px #fffafa,
+		0 0 20px #ffe1e4,
+		0 0 40px #ffafbb;
+	}
+	
+	/* projects preview page */
+	.proj{
+		display: grid;
+		width:80%;
+		margin: 4vh auto;
+		grid-row-gap: 10vh;
+		grid-template-columns: 30vw 30vw;
+		grid-template-rows: repeat(2,30vw);
+		justify-content: space-around;
+	}
+
+	.proj h1{
+		width:91%;
+		margin-left:1.8vw;
+		margin-right:5vw;
+		margin-bottom: 2vw;
+		font-size: 2vw;	
+	}
+	
+	#homesOffCampus{
+		background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/homesOffCampus/logo.png");
+	}
+	
+	#confucious{
+		background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/confucious/concept_logo.PNG");		
+	}
+
+	#collect{
+		background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/collect/logo.png");
+	}
+
+	#connectr{
+		background-image: linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3),rgba(0,0,0,0)),url("../imgs/proj/connectr/logo.png");
+	}
+
+
+	/* project detail */
+	.back{
+		display: inline-block;
+		font-family: 'Sora', sans-serif;
+		font-size: 50%;
+		margin-left: 2vw;
+		margin-bottom: 3vh;
+		color: #F57684;
+		text-decoration: none;
+	}
+	
+	.project_detail{
+		font-size: 4vw;
+		background-color: white;
+		width: 100%;
+		margin-bottom: 0;
+		color:black;
+		padding: 3vw;
+	}
+	
+	.project_detail .regular_text{
+		font-size: 2vw;
+		margin-left: 1vw;
+		margin-bottom: 3vh;
+	}
+	
+	.what{
+		color:#4F7CAC;
+		font-size: 100%;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 3vh;
+	}
+	
+	.project_detail iframe{
+		width: 90%;
+		height: 80vh;
+		display: block;
+		margin:0 auto;
+	}
+	
+	/* homesOffCampus */
+	
+	/* confucious */
+	
+	/* connectr */
+	
+	/* collect */
+
+
+
+	/* interest	 */
+	.interest_div{
+		width: 100%;
+		height: 90vh;
+	}
+
+	.interest_main .text{
+		font-size: 3vw;
+	}
+
+	.basketball{
+		background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),url("../imgs/interest/basketball/background_desktop.png");
+	}
+	
+	#lebron_poster{
+		width: 40vw;
+		bottom: -10vw;
+		right:-5vw;
+	}
+	
+	#kobe_painting{
+		width:20vw;
+		top: 1vh;
+		left: 2vw;
+	}
+	
+	.basketball_text{
+		height:50vh;
+		width: 53vw;
+		top: 20vh;
+		left: 23vw;
+		box-shadow: 3vw 2.5vw rgb(128, 0, 0);
+	}
+
+	#basketball_icon{
+		width:8vw;
+		height: 8vw;
+		left:5vw;
+		animation: bounce 0.78s  ease-out infinite;
+	}
+	
+	@keyframes bounce {
+		0% {
+		  bottom: 20vh;
+		}
+		50% {
+		  bottom: -2vw;
+		  width: 8.8vw;
+		  height: 6.8vw;
+		}
+		100%{
+			bottom: 20vh;
+			width:8vw;
+			height:8vw;
+		}
+	  }
+	
+	/* guitar */
+	.guitar{	
+		background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),url("../imgs/interest/guitar/background_desktop.jpeg");
+	}
+	
+	#guitar_img{
+		width: 60vw;
+		top:-100vh;
+		left:-4vw;
+	}
+
+	.guitar_text{
+		width: 53vw;
+		height: 50vh;
+		top: 15vh;
+		left: 30vw;
+		box-shadow: 3vw 2.5vw #5c3452;
+	}
+
+	#notes1{
+		z-index: 100;
+		width:5vw;
+		top: 70vh;
+		left: 27vw;
+		animation:  notes_shift 5.1s linear infinite;
+	}
+	#notes2{
+		z-index: 100;
+		width:7vw;
+		top: 70vh;
+		left: 35vw;
+		animation:  notes_shift 4.4s linear infinite;
+	}
+	#notes3{
+		z-index: 100;
+		width:6vw;
+		top: 75vh;
+		left: 40vw;
+		animation:  notes_shift 5.5s linear infinite;
+	}
+	
+	/* mario */
+	.mario{
+		background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0)),url("../imgs/interest/mario kart/background_desktop.jpeg");
+	}
+	
+	#mario_kart{
+		bottom:0vh;
+		left:60vw;
+		z-index: 2;
+		width: 50vw;
+	}
+	
+	#pipe{
+		width: 30vw;
+		bottom:-10vh;
+		left:0vw;
+	}
+	
+	#brick{
+		width: 25vw;
+		bottom: 10vh;
+		left:3vw;
+	}
+	
+	#star{
+		width:10vw;
+		bottom: 41vh;
+		left:11vw;
+		z-index: 2;
+		display:none;
+	}
+	
+	.star_activate{
+		animation: shine 2.3s linear;
+	}
+
+	@keyframes shine {
+		0% { bottom: 39vh; transform: scale(1) ; opacity:0.0}
+		10% {bottom: 42vh;transform: scale(1) ; opacity: 0.5}
+		20%{bottom: 45vh; transform:  scale(1) ; opacity: 1}
+		30% { transform: scale(1.27) ;}
+		40% {transform: scale(1) ;}
+		50%{transform:  scale(1.18) ;}
+		60%{transform:  scale(1) ;}
+		70%{transform:  scale(1.12) ;}
+		80%{transform:  scale(1) ;}
+		100%{transform: scale(1) ;}
+	}
+	
+	#mario_logo{
+		width:8vw;
+		top: 3vw;
+		right:3vw;
+	}
+	
+	.mario_text{
+		width: 53vw;
+		height: 50vh;
+		top: 10vh;
+		left: 29vw;
+		box-shadow: 3vw 2.5vw #3229af;
+	}
+
+	/* youtube */
+	.youtube{
+		background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0.0)),linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0.0)),url("../imgs/interest/youtube/background3.jpg");
+	}
+	
+	#window{
+		position: relative;
+		display: block;
+		top:5vh;
+		margin: 0 auto;
+		width: 55vw;
+	}
+	
+	#youtube_logo{
+		width: 20vw;
+		position: absolute;
+		top: -2vh;
+		left:0vw;
+		z-index: 2;
+	}
+	
+	.youtube_text{
+		width: 60vw;
+		height: 80vh;
+		bottom:10vh;
+		left: 20vw;
+	}
+	
+	/* travel */
+	.travel{
+		background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.2),rgba(0,0,0,0.0)),linear-gradient(to top,rgba(0,0,0,0.95),rgba(0,0,0,0.55),rgba(0,0,0,0.0)),url("../imgs/interest/travel/collage.jpeg");
+		background-size: contain;
+	}
+	
+	#attractions{
+		width: 40vw;
+		bottom: 15vh;
+		left: 0;
+		animation: drift 3s linear infinite;
+		z-index: 2;
+	}
+	
+	#shadow{
+		width: 30vw;
+		bottom: 2vh;
+		left:3vw;
+		animation: shadow_effect 3s linear infinite;
+	}
+	
+	#passport{
+		width: 35vw;
+		bottom: 3vh;
+		right:-7vw;
+		z-index:2;
+		
+	}
+	
+	.travel_text{
+		width: 53vw;
+		height: 50vh;
+		top: 12vh;
+		left: 30vw;
+		box-shadow: 3vw 4vw #84fff4;
+	}
+
+	form{
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	legend{
+		font-size: 180%;
+	}
+	label{
+		font-size: 150%;
+	}
+	input[type="submit"]{
+		font-size: 150%;
+	}
+
+
+	.parallax{
+		background-image: url("../imgs/interest/travel/collage.jpeg");
+		min-height: 70vh; 
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.travel_photo{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1.5fr;
+		grid-template-rows: auto;
+		grid-gap:3vw;
+		overflow: hidden;
+		align-items: center ;
+	}
+	.travel_photo img:hover{
+		opacity: 0.5;
+	}
+	.japan{
+		grid-row: 1/ span 2;
+		grid-column:1/ span 2;
+	}
+	.singapore{
+		grid-row:3/ span 2;
+		grid-column: 1/ span 1;
+	}
+
+}
+
+
+@media (prefers-reduced-motion: reduce){
+	#notes1, #notes2, #notes3, #kobe_painting, #basketball_icon, .star_activate, #youtube_logo,#shadow,#attractions {
+		animation: none;
+	}
+}
