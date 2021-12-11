@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imgs/personal/icon.jpg">
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Interest</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Roboto:wght@300;400&family=Sora:wght@200;400&family=Source+Sans+Pro&display=swap"
+		rel="stylesheet">
+
+	<!-- AOS: animate on scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+	<header>	
+		<div class="skip"><a href="#main">Skip to Main Content</a></div>
+		<a href="index.html"><img src="imgs/personal/logo.png" alt="website logo" id="logo"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">About</a></li>
+				<li><a href="project.html">Project</a></li>
+				<li><a href="interest.html" id="current">Interest</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="interest_main" id="main">
+		<div class="interest_div basketball" data-aos="fade-down">
+
+			<img src="imgs/interest/basketball/kobe_painting.png" alt="Kobe Bryant painting" id="kobe_painting">
+
+
+			<img src="imgs/interest/basketball/lebron_poster.png" alt="Lebron poster" id="lebron_poster">
+
+
+			<img src="imgs/interest/basketball/basketball_icon.png" alt="" id="basketball_icon">
+
+			<h1 class="text basketball_text">
+				<p>I have been an NBA fan for over ten years and I LOVE the game of basketball. My favorite players are
+					Lebron James and Russell Westbrook.</p>
+			</h1>
+		</div>
+
+		<div class="interest_div guitar" data-aos="fade-right">
+
+			<img src="imgs/interest/guitar/guitar.png" alt="a guitar" id="guitar_img">
+
+			<img src="imgs/interest/guitar/notes1.svg" alt="" id="notes1">
+			<img src="imgs/interest/guitar/notes2.svg" alt="" id="notes2">
+			<img src="imgs/interest/guitar/notes3.svg" alt="" id="notes3">
+			<h1 class="text guitar_text">
+				<p>I learned to play the guitar back in high school just to be cool. Since then, it has become my best
+					friend and brought me so much joy.</p>
+			</h1>
+		</div>
+
+		<div class="interest_div mario" data-aos="fade-left">
+			<img src="imgs/interest/mario kart/mario_logo.png" alt="Super Mario Logo" id="mario_logo">
+			<img src="imgs/interest/mario kart/pipe.png" alt="" id="pipe">
+			<img src="imgs/interest/mario kart/star.png" alt="" id="star">
+			<img src="imgs/interest/mario kart/brick.png" alt="" id="brick">
+			<img src="imgs/interest/mario kart/mario.png" alt="" id="mario_kart">
+			<h1 class="text mario_text">
+				<p>I have always been a fan of Super Mario, from the classic 2D Mario to my favorite Mario Kart and
+					Mario Odessy. </p>
+			</h1>
+		</div>
+
+		<script>
+			document.querySelector("#brick").addEventListener("click", function () {
+				document.querySelector("#star").style.display = "block";
+				document.querySelector("#star").classList.add("star_activate");
+			})
+		</script>
+
+
+		<div class="interest_div youtube" data-aos="flip-right">
+			<img src="imgs/interest/youtube/window.png" alt="" id="window">
+			<img src="imgs/interest/youtube/logo.png" alt="YouTube Logo" id="youtube_logo">
+			<h1 class="text youtube_text">
+				<p>I am addicted to watching YouTube. I think there was a time I didn't miss a day for the whole
+					year. I hope one day I can also be a content creator instead of a viewer.</p>
+			</h1>
+		</div>
+
+		<div class="interest_div travel" data-aos="zoom-in">
+			<img src="imgs/interest/travel/attractions.png" alt="" id="attractions">
+			<img src="imgs/interest/travel/shadow.png" alt="" id="shadow">
+			<img src="imgs/interest/travel/passport.png" alt="" id="passport">
+			<h1 class="text travel_text">
+				<p>I love travelling and discovering new places. I have visited <a href="travel.html"><span id="visited_num">20</span></a>
+					countries so far and the next one on my list is Turkey 🇹🇷. </p>
+			</h1>
+		</div>
+
+	</main>
+
+	<footer>
+		<p>Tianchi Fu &copy; 2021</p>
+	</footer>
+
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	  AOS.init({
+		  duration:2200
+	  });
+	</script>
+
+</body>
+
+</html>

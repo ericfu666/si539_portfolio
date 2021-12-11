@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="imgs/personal/icon.jpg">
+		<link rel="stylesheet" href="css/html5reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Contact</title>
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@600&family=Roboto:wght@300;400&family=Sora:wght@200;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	</head>
+
+<body>
+
+	<header>
+		<div class="skip"><a href="#main">Skip to Main Content</a></div>
+		<a href="index.html"><img src="imgs/personal/logo.png" alt="website logo" id="logo"></a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href = "index.html">About</a></li>
+				<li><a href = "project.html">Project</a></li>
+				<li><a href = "interest.html">Interest</a></li>
+				<li><a href = "contact.html" id="current">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="main">
+		<form action="https://formspree.io/f/mwkagdbp" method="POST">
+			<fieldset>
+			  <legend>Feel free to leave me a message:</legend>
+		  
+			  <label for="name">Your Name</label>
+			  <input type="text" placeholder="Enter Your Name" id = "name" name="name" required>
+		  
+			  <label for="email">Your Email</label>
+			  <input type="email" placeholder="Enter Your Email" id = "email" name="email" required>
+		  
+		  
+			  <label for="msg">Leave Your Message Here</label>
+			  <textarea placeholder="Enter your message" id = "msg" name="msg" required></textarea><br>
+		  
+			  <input type="submit" value = "Contact Me">
+			</fieldset>
+		   </form>
+	</main>
+
+	<footer>
+		<p>Tianchi Fu &copy; 2021</p>
+	</footer>
+</body>
+</html>
